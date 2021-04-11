@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇博客文章 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章内容   第二章内容   参考文献www.baidu.com">
+  <meta name="description" content="单例模式 - 懒汉式  单例模式是什么？    &amp;emsp;&amp;emsp;单例模式（Singleton Pattern）是一种非常简单得设计模式，它提供了一种创建对象的方式。   &amp;emsp;&amp;emsp;该模式是用一个单一的类，来创建自己的对象，同时确保，只有单个对象被创建，也就是说，指向这个类的对象，永远只有一个，并且不需要实例化该对象，直接获取对象即可。    如何实现？  ​    首先，我">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://example.com/2021/04/11/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/04/11/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%20-%20%E6%87%92%E6%B1%89%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章内容   第二章内容   参考文献www.baidu.com">
+<meta property="og:description" content="单例模式 - 懒汉式  单例模式是什么？    &amp;emsp;&amp;emsp;单例模式（Singleton Pattern）是一种非常简单得设计模式，它提供了一种创建对象的方式。   &amp;emsp;&amp;emsp;该模式是用一个单一的类，来创建自己的对象，同时确保，只有单个对象被创建，也就是说，指向这个类的对象，永远只有一个，并且不需要实例化该对象，直接获取对象即可。    如何实现？  ​    首先，我">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-11T07:39:36.000Z">
-<meta property="article:modified_time" content="2021-04-11T07:53:17.525Z">
+<meta property="article:published_time" content="2021-04-11T11:20:44.105Z">
+<meta property="article:modified_time" content="2021-04-11T11:20:31.011Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,34 +154,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-单例模式 - 懒汉式" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
-    </h1>
-  
-
-        
-        <a href="/2021/04/11/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-04-11T07:39:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-11</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><pre><code>内容
-</code></pre>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><pre><code>内容
-</code></pre>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><pre><code>www.baidu.com
-</code></pre>
+        <blockquote>
+<h1 id="单例模式-懒汉式"><a href="#单例模式-懒汉式" class="headerlink" title="单例模式 - 懒汉式"></a>单例模式 - 懒汉式</h1></blockquote>
+<blockquote>
+<p>单例模式是什么？</p>
+</blockquote>
+<p>  &emsp;&emsp;单例模式（Singleton Pattern）是一种非常简单得设计模式，它提供了一种创建对象的方式。</p>
+<p>  &emsp;&emsp;该模式是用一个单一的类，来创建自己的对象，同时确保，只有单个对象被创建，也就是说，指向这个类的对象，永远只有一个，并且不需要实例化该对象，直接获取对象即可。</p>
+<blockquote>
+<p>  如何实现？</p>
+</blockquote>
+<p>​    <strong>首先，我们要分成几个步骤：</strong></p>
+<p>​    &emsp;<u>1.创建一个属于单例设计模式的类</u></p>
+<p>​        &emsp;&emsp;&emsp;–&gt; 我们将在这个类的基础上，去创造一个<strong>单例设计模式</strong>的类</p>
+<p>​    &emsp;<u>2.私有化构造器</u></p>
+<p>​        &emsp;&emsp;&emsp;–&gt; 单例模式的设计思想是，保证一个类仅有一个实例，节省资源的同时，还保证了一致性。</p>
+<p>​        &emsp;&emsp;&emsp;–&gt; 通过<strong>私有化构造器</strong>的方式，我们可以拒绝别的类创造该类对象，只能使用我们提供的对象。</p>
+<p>​        &emsp;<u>3.我们在该类下，声明当前的类对象</u></p>
+<p>​        &emsp;&emsp;&emsp;–&gt; 该对象要声明为私有的(<strong>private</strong>)、静态的(<strong>static</strong>)。</p>
+<p>​        &emsp;&emsp;&emsp;–&gt; 在此时，我们先不要初始化对象，先给对象赋值为<strong>null</strong>，我们只在需要的时候创建实际的对象。</p>
+<p>​        &emsp;<u>4.声明公共的(<strong>public</strong>)、静态的(<strong>static</strong>)，返回当前类对象的方法</u></p>
+<p>​                &emsp;&emsp;&emsp;–&gt; 声明该方法的目的是，我们提供了<strong>统一且唯一的</strong>获取该类对象的方式。</p>
+<p>​                &emsp;&emsp;&emsp;–&gt; 我们在该类下，创建要返回的对象</p>
+<p>​                &emsp;&emsp;&emsp;–&gt; 这时候要判断一下，我们当前类对象，是否已经创建完成，如果已经被创建了，就直接把对象返回，如果没有创建，再去给他创建该类对象，保证该类永远只有一个对象。</p>
+<p>​        &emsp;<u>5.线程安全问题</u></p>
+<p>​                &emsp;&emsp;&emsp;–&gt; 我们在创建对象的时候，需要注意<strong>线程安全问题</strong>，如果多个线程，同时进入判断，那么有可能会创建多个对象。</p>
+<p>​                &emsp;&emsp;&emsp;–&gt; 在我们创建对象的代码块中，通过添加<strong>同步监视器</strong>的方式，解决线程安全问题。</p>
+<blockquote>
+<h2 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h2></blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例 - 懒汉式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">   <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BankTest</span> </span>&#123;</span><br><span class="line">   	 <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">       <span class="comment">//接收两次对象</span></span><br><span class="line">       Bank bank = Bank.getInstance();</span><br><span class="line">       Bank bank1 = Bank.getInstance();</span><br><span class="line">       <span class="comment">//判断是否是同一对象</span></span><br><span class="line">       System.out.println(bank == bank1);</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//单例模式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Bank</span> </span>&#123;</span><br><span class="line">    <span class="comment">//1.私有化类的构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Bank</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2.声明当前类对象，没有初始化，必须声明为static</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Bank instance = <span class="keyword">null</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//3.声明public的、static的 返回当前类对象的方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Bank <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">//判断对象是否创建，如果创建，则直接返回对象</span></span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">//同步监视器，解决线程安全问题</span></span><br><span class="line">            <span class="keyword">synchronized</span> (Bank.class) &#123;</span><br><span class="line">                <span class="comment">//判断对象是否创建，如果为null，则实例化</span></span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> Bank();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回对象实例</span></span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2></blockquote>
+<p>​    <em>当我们只需要一个实例的时候，可以使用单例模式来进行创建保证唯一性，比如回收站、网站的计数器、日志等。</em></p>
 
       
 
@@ -261,7 +273,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/11/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/11/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%20-%20%E6%87%92%E6%B1%89%E5%BC%8F/" alt="微信分享二维码">
     </div>
 </div>
 
